@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- css -->
+        <link rel="stylesheet" href="../../style.css">
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    
+    <title>Presupuestar</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="../../index.html"><img class="logo"  src="../../multimedia/image/logo-blanco.png" alt="Logo de la empresa">
+            </a>
+            <a class="header-marca" href="../../index.html">MARIANI MUEBLES</a>
+        </div>
+        <!-- lista desordenada con los iconos navegables-->
+        <nav>
+                <ul class="header-menu">
+                    <li class="header-menuItem">
+                        <img class="" src="../../multimedia/image/lupa.png" alt="lupa">
+                        <!--icono, cuando te posicionas con el puntero se expanda y te de un cuadro de texto que diga "busqueda"-->
+                    </li>
+                    <li class="header-menuItem">
+                        <a href="#contact"><img class="" src="../../multimedia/image/atencion-al-cliente.png" alt="Contacto">
+                        </a>
+                    </li>
+                    <li class="header-menuItem">
+                        <img class="" src="../../multimedia/image/work-places.png" alt="WorkPlaces">
+                        <!--La idea es que sea un icono, en el cual cuando te posicionas sobre el con el puntero se expanda y te muestre las diferentes categorias con links a las mismas-->
+                    </li>
+                    <li class="header-menuItem"><a class="" href="../../pages/info/nosotros.html"><img class="" src="../../multimedia/image/equipo.png" alt="Nosotros"></a>
+                    </li>
+                </ul>                
+        </nav>
+    </header>
+    <main class="presupuesto__main-grid">
+        <div class="PresuTxt">
+            <h1>Consulta</h1>
+            <p>En caso de poseer, adjuntar documentacion o imagenes de referencia</p>
+        </div>
+        <form>
+            <div class="input__firstRow">
+                <input type="text" name="name" placeholder="Nombre y Apellido">
+                <input type="tel" name="tel" placeholder="Telefono">
+            </div>
+            <input class="input__secondRow" type="email" name="email" placeholder="Email">
+                <textarea name="consulta" placeholder="Detalle su consulta."></textarea>
+            <div class="enviar">
+                <img src="../../multimedia/image/clip.png" alt="Adjuntar">
+                <input type="button" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="../../multimedia/image/logo-blanco.png" alt="Logo">
+            <a href="../../index.html">MARIANI MUEBLES</a>
+        </div>
+        <nav id="contact">
+            <ul class="contact-menu">
+                <li class="contact-item">
+                    <img class="" src="../../multimedia/image/facebook.png" alt="Logo FB">
+                    <a target="_blank" href="https://www.facebook.com/">aca va el fb</a>
+                </li>
+                <li class="contact-item">
+                    <img class="" src="../../multimedia/image/whatsapp.png" alt="Logo WPP">
+                    <a href="">11mm919mmm</a> 
+                </li>
+                <li class="contact-item">
+                    <img class="" src="../../multimedia/image/instagram.png" alt="Logo IG">
+                    <a target="_blank" href="https://www.instagram.com/mariani.muebles/">@mariani.muebles</a>
+                </li>
+                <li class="contact-item">
+                    <img class="" src="../../multimedia/image/email.png" alt="Logo mail">
+                    <a>amuebla.mariani@gmail.com</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

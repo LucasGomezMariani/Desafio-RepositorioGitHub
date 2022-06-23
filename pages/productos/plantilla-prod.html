@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plantilla productos</title>
+        <!-- css -->
+        <link rel="stylesheet" href="../../style.css">
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="../../index.html"><img class="logo"  src="../../multimedia/image/logo-blanco.png" alt="Logo de la empresa">
+            </a>
+            <a class="header-marca" href="../../index.html">MARIANI MUEBLES</a>
+        </div>
+        <!-- lista desordenada con los iconos navegables-->
+        <nav>
+                <ul class="header-menu">
+                    <li class="header-menuItem">
+                        <img class="" src="../../multimedia/image/lupa.png" alt="lupa">
+                        <!--icono, cuando te posicionas con el puntero se expanda y te de un cuadro de texto que diga "busqueda"-->
+                    </li>
+                    <li class="header-menuItem">
+                        <a href="#contact"><img class="" src="../../multimedia/image/atencion-al-cliente.png" alt="Contacto">
+                        </a>
+                    </li>
+                    <li class="header-menuItem">
+                        <img class="" src="../../multimedia/image/work-places.png" alt="WorkPlaces">
+                        <!--La idea es que sea un icono, en el cual cuando te posicionas sobre el con el puntero se expanda y te muestre las diferentes categorias con links a las mismas-->
+                    </li>
+                    <li class="header-menuItem"><a class="" href="../../pages/info/nosotros.html"><img class="" src="../../multimedia/image/equipo.png" alt="Nosotros"></a>
+                    </li>
+                </ul>                
+        </nav>
+    </header>
+    <main class="prod__main-grid">
+        <div class="prod__title">
+            <h1>Titulo del producto.</h1>
+            <div class="prod__title__copartir__img">
+                <img src="../../multimedia/image/avion-de-papel.png" alt="">
+                <img src="../../multimedia/image/instagram.png" alt="">
+                <img src="../../multimedia/image/twitter.png" alt="">
+                <img src="../../multimedia/image/whatsapp.png" alt="">
+            </div>
+        </div>
+        <div class="prod__ppl"><!-- La idea es que sea como la img ppl de mercado libre, y cuando selecciono alguna de las de la derecha, esta se sustituya por la seleccionada -->
+            <div class="prod__ppl__img">
+                <img src="../../multimedia/image/baño.jpg" alt="">
+            </div>
+            <div class="prod__ppl__img__sec">
+                <img src="../../multimedia/image/icon_baño.png" alt="producto">
+                <img src="../../multimedia/image/icon_baño.png" alt="producto">
+                <img src="../../multimedia/image/icon_baño.png" alt="producto">
+            </div>
+            <div class="prod__ppl__info">
+                <div class="prod__ppl__descripcion">
+                    <h2>Descripción.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi ex, quae nam porro ea sed, quo consectetur ipsa, sunt illo adipisci beatae et nemo mollitia distinctio nostrum iure aliquid non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio dolore veritatis recusandae ab ipsa aliquid non! aliquam, dolore quibusdam natus sint cupiditate necessitatibus dolor a, unde eum quos magni neque in dolorem.</p>
+                </div>
+                <div class="prod__precio">
+                    <p class="prod__precio__num">$$$$$</p>
+                    <div class="prod__cant">
+                        <p class="prod__cant__titulo">Cantidad</p>
+                        <!-- "P" para simular una entrada de texto que multiplique el precio -->
+                        <p class="prod__cant__num">xx</p>
+                    </div>
+                </div>
+                <!-- Voy a usar un ul para simular unos botones para seleccionar el color -->
+                <ul class="prod__color">
+                    <li>Negro</li>
+                    <li>Blanco</li>
+                    <li>Marron</li>
+                </ul>
+                <!-- Boton de compra -->
+                <div class="prod__comprar">
+                    <a href="#">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="preguntas">
+            <div>
+                <h3 class="titulo__consultas">Consultas</h3>
+            </div>
+            <div class="preguntas__input">
+                <div class="preguntas__datos">
+                    <input class="prod__input__consultas" type="text" placeholder="Nombre y apellido">
+                    <input class="prod__input__consultas" type="email" placeholder="email">
+                </div>
+                <div class="preguntas__textarea">
+                    <textarea name="consulta" id="" rows="10" placeholder="Escribir consulta"></textarea>
+                    <a class="preguntas__bottom" href="#">Enviar</a>
+                </div>
+            </div>
+        </div>
+        <div class="info__importante">
+            <div class="info__importante__card"><img src="../../multimedia/image/envio.png" alt="Envio sin cargo CABA y AMBA"><p>Envio sin cargo <br> CABA y AMBA</p>
+            </div>
+            <div class="info__importante__card"><img src="../../multimedia/image/tarjeta-de-credito.png" alt="TRANSFERENCIA 5% de descuento"><p>TRANSFERENCIA <br> 5% de descuento</p>
+            </div>
+            <div class="info__importante__card"><img src="../../multimedia/image/tarjetas.png" alt="VISA O MASTERCARD"><p>VISA O MASTERCARD <br> hasta 6 cuotas</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="../../multimedia/image/logo-blanco.png" alt="Logo">
+            <a href="../../index.html">MARIANI MUEBLES</a>
+        </div>
+        <nav id="contact">
+            <ul class="contact-menu">
+                <li class="contact-item">
+                    <img class="" src="../../multimedia/image/facebook.png" alt="Logo FB">
+                    <a target="_blank" href="https://www.facebook.com/">aca va el fb</a>
+                </li>
+                <li class="contact-item">
+                    <img class="" src="../../multimedia/image/whatsapp.png" alt="Logo WPP">
+                    <a href="">11mm919mmm</a> 
+                </li>
+                <li class="contact-item">
+                    <img class="" src="../../multimedia/image/instagram.png" alt="Logo IG">
+                    <a target="_blank" href="https://www.instagram.com/mariani.muebles/">@mariani.muebles</a>
+                </li>
+                <li class="contact-item">
+                    <img class="" src="../../multimedia/image/email.png" alt="Logo mail">
+                    <a>amuebla.mariani@gmail.com</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
