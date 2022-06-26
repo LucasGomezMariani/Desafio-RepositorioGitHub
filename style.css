@@ -177,6 +177,12 @@ footer{
     height: auto;
     padding: .5rem;
 }
+.card__img{
+    transition: all 3s;
+}
+.card__img:hover{
+    transform: rotate(360deg);
+}
 .card__link{
     position: absolute;
     left: 5%;
@@ -220,6 +226,11 @@ text-align: center;}
     border-left: solid 2px black;
     border-bottom: solid 2px black;
 }
+.esp__text a:hover{
+    transition: all .8s;
+    transform:scale(1.1) 
+}
+
 .esp__img{
     width: 50%;
     height: auto;
