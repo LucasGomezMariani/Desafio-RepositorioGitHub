@@ -8,7 +8,7 @@ DETALLES    #e4e2e1
 */
 
 /* Esto lo use para emparejar las imagenes a un tamaño apto a la pantalla mientras acomodaba el CSS */
-img{
+nav img{
     height: 2rem;
     }
 
@@ -18,8 +18,133 @@ img{
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    font-size: 16px;}
+    font-size: 16px;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+#img__carousel{
+    height: 12rem;
+}
+#img__info{
+    height: auto;
+    width: 30%;
+}
 
-.header__bc__lucas{
-    background-color: #454546;
+.card{
+    border: none;
+    align-items: center;
+}
+.info__card{
+    text-align: center;
+}
+.navbar-brand{
+    align-items: center;
+}
+/* footer */
+footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    padding: .5rem 0;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-logo img{
+    width: 4rem;
+    height: auto;
+    margin: 0 1rem;
+}
+.footer-logo a{
+    width: max-content;
+    font-size: 2.5rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #e4e2e1;
+}
+#contact{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.contact-menu{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.contact-item{
+    width: 50%;
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contact-item img{
+    width: 2rem;
+    height: auto;
+    margin: 0 1rem;
+}
+.contact-item a{
+    text-decoration: none;
+    color: #e4e2e1;
+    font-size: 1rem;
+}
+/* end footer */
+.banner{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: video;
+}
+.banner__video{
+    width: 95%;
+    height: fit-content;
+}
+
+
+/* media queris tablet */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    *{font-size: 12px;}
+
+    /* footer */
+    .contact-menu{
+        display: flex;
+        justify-content: space-evenly;}
+    .contact-item{
+        width: fit-content;}
+    .contact-item a{
+        display: none;}
+    footer nav{
+        display: flex;}
+}
+
+    /* media queris mobile */
+@media screen and (max-width: 599px) {
+    *{font-size: 12px;}
+
+    /* footer */
+    footer {
+        flex-direction: column;
+        align-items: center;}
+    .contact-menu{
+        display: flex;
+        justify-content: space-evenly;}
+    .contact-item{
+        width: fit-content}
+    .contact-item a{
+        display: none}
 }

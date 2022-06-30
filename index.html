@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="style.css">
     <!-- font -->
@@ -14,18 +14,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
     <title>Home Mariani Muebles</title>
 </head>
-<body class="container-fluid">
+<body class="w-100">
+
     <!-- header -->
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark header">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="multimedia/image/logo-blanco.png" alt="Logo de la empresa">Mariani Muebles</a>
+                <a class="navbar-brand" href="index.html">
+                    <img class="mr-2" src="multimedia/image/logo-blanco.png" alt="Logo de la empresa">
+                    Mariani Muebles
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="MenuNavegacion" class="collapse navbar-collapse">
+                <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end">
                     <ul class="navbar-nav ms-3">
-                        <li class="nav-item">Armar boton busqueda</li>
+                        <li class="nav-item">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </li>
                         <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
@@ -37,99 +45,171 @@
                                 <li class="nav-item"><a href="pages/categorias/categoriax.html" class="dropdown-item">Industrial</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="" class="nav-link"></a></li>
+                        <li class="nav-item"><a href="pages/info/nosotros.html" class="nav-link">Nosotros</a></li>
 
                     </ul>
                 </div>
             </div>
-        </nav>
-    </header>
+    </nav>
+
     <!-- Contenido -->
-    <main class="">
+    <main class="main__index container-fluid">
         <!-- section carrusel de categorias -->
-        <div class="">
-            <!--La idea es que cada "div" contenga un carrusel de imagenes, con una barra de avance. Y que a su vez estos esten contenidos dentro de otro que sea controlable con una barra de progreso inferior-->
-            <div class="">
-                <img class="" src="multimedia/image/icon_cocina.png" alt="Cocina"><a class="" href="pages/categorias/categoriax.html">COCINA</a>
-            </div>
-            <div class="">
-                <img class="" src="multimedia/image/icon_oficina.png" alt="oficina"><a class="" href="pages/categorias/categoriax.html">OFICINA</a>
-            </div>
-            <div class="CarruselCategorias__card">
-                <img class="" src="multimedia/image/icon_dormitorio.png" alt="dormitorio"><a class="" href="pages/categorias/categoriax.html">DORMITORIO</a>
-            </div>
-            <div class="CarruselCategorias__card">
-                <img class="" src="multimedia/image/icon_baño.png" alt="baño"><a class="" href="pages/categorias/categoriax.html">BAÑO</a>
-            </div>
-            <div class="CarruselCategorias__card">
-                <img class="" src="multimedia/image/icon_industriales.png" alt="industrial"><a class="" href="pages/categorias/categoriax.html">INDUSTRIAL</a>
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-3">
+                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="multimedia/image/carr1.jpg" id="img__carousel" class="d-block " alt="img 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/image/carr2.jpg" id="img__carousel" class="d-block" alt="img 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/image/carr2.jpg" id="img__carousel" class="d-block" alt="img 3">
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="col-3">
+                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="multimedia/image/carr1.jpg" id="img__carousel" class="d-block " alt="img 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/image/carr2.jpg" id="img__carousel" class="d-block" alt="img 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/image/carr2.jpg" id="img__carousel" class="d-block" alt="img 3">
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="col-3">
+                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="multimedia/image/carr1.jpg" id="img__carousel" class="d-block " alt="img 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/image/carr2.jpg" id="img__carousel" class="d-block" alt="img 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/image/carr2.jpg" id="img__carousel" class="d-block" alt="img 3">
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="col-3">
+                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="multimedia/image/carr1.jpg" id="img__carousel" class="d-block " alt="img 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/image/carr2.jpg" id="img__carousel" class="d-block" alt="img 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="multimedia/image/carr2.jpg" id="img__carousel" class="d-block" alt="img 3">
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+
             </div>
         </div>
         <!-- section proyectos especiales-->
-        <section class="">
-            <div class="">
-                <h3>Proyectos especiales.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem ipsum vero ea ex odit sint quia doloremque officiis fuga vitae earum quo tenetur optio numquam molestias, possimus facere magni ad! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, minus commodi. Temporibus quisquam in harum ab nihil culpa, rerum eius cupiditate, aut et dolores. Dolorem alias est officiis repudiandae incidunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusantium quidem voluptatem beatae commodi doloribus, nihil, soluta earum, voluptas obcaecati veniam asperiores sapiente rerum illum dolorum mollitia. In, modi voluptate.</p>
-                <a href="pages/info/presupuesto.html" target="_blank">Presupuestar</a> <!--La idea es agregar un boton que redireccione a otra pestaña con un formulario para presupuestar y contactar al cliente-->
+        <div class="card mb-3 container mt-5 border border-secondarys">
+            <div class="row g-0">
+                <div class="col-md-7">
+                    <div class="card-body text-center">
+                        <h3 class="card-title fs-3 mb-5">Proyectos especiales.</h3>
+                        <p class="card-text md-fs-5 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nesciunt cumque, molestiae eius et quas unde porro quo. Officiis, reprehenderit possimus. Recusandae iste aperiam in laborum quis deleniti rem. Inventore, cupiditate fugiat! Alias earum tempore aspernatur mollitia. Fugit possimus cum nam? Dicta facere exercitationem est magnam eos autem aliquam architecto.</p>
+                        <a role="button" href="pages/info/presupuesto.html" class="btn btn-outline-secondary btn-lg">Presupuestar</a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img src="multimedia/image/cocina_section_especiales.jpg" class="img-fluid rounded-start mt-3 mb-3" alt="Cocina a medida">
+                </div>
+
             </div>
-            <img class="" src="multimedia/image/cocina_section_especiales.jpg" alt="Cocina a medida">
-        </section>
+        </div>
         <!--section info y detalles-->
-        <!--La idea es armar un espacio con informacion sobre la metodologia de trabajo de la empresa y detalles-->
-        <section class="">
-            <div class="">
-                <img src="multimedia/image/1.png" alt="Krion">
-                <h3 class="">MATERIALES</h3>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, repudiandae praesentium! Ducimus, odit nulla aperiam commodi dolorem error saepe iste eum libero qui? Odio vitae alias reprehenderit voluptates veritatis explicabo.</p>
+        <div class="row row-cols-1 row-cols-md-2 g-4 index__info">
+            <div class="col">
+                <div class="card">
+                    <img src="multimedia/image/1.png" id="img__info" class="card-img-top" alt="Krion">
+                    <div class="card-body info__card">
+                        <h5 class="card-title">MATERIALES</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero et neque non consequuntur corrupti aspernatur dignissimos officiis vel tempora porro. Sequi reiciendis mollitia exercitationem explicabo inventore! Voluptatum vero nesciunt itaque.</p>
+                    </div>
+                </div>
             </div>
-            <div class="">
-                <img src="multimedia/image/2.jpg" alt="Krion">
-                <h3 class="">KRION</h3>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, repudiandae praesentium! Ducimus, odit nulla aperiam commodi dolorem error saepe iste eum libero qui? Odio vitae alias reprehenderit voluptates veritatis explicabo.</p>
+            <div class="col">
+                <div class="card">
+                <img src="multimedia/image/2.jpg" alt="Krion" id="img__info" class="card-img-top">
+                <div class="card-body info__card">
+                    <h5 class="card-title">KRION</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates error vitae accusantium, consequuntur tempore dolores, facilis debitis inventore ipsum odio, perspiciatis commodi! Consequuntur corporis numquam non nulla vero vel quisquam.</p>
+                </div>
+                </div>
             </div>
-            <div class="">
-                <img src="multimedia/image/5.png" alt="Detalle">
-                <h3 class="">DETALLES</h3>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, repudiandae praesentium! Ducimus, odit nulla aperiam commodi dolorem error saepe iste eum libero qui? Odio vitae alias reprehenderit voluptates veritatis explicabo.</p>
+            <div class="col">
+                <div class="card">
+                <img src="multimedia/image/5.png" class="card-img-top" id="img__info" alt="Detalle">
+                <div class="card-body info__card">
+                    <h5 class="card-title">Detalles</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut numquam illo nisi molestias eveniet debitis? Qui, ad asperiores possimus sit iste fuga eveniet veniam at harum odit explicabo, blanditiis aspernatur?</p>
+                </div>
+                </div>
             </div>
-            <div class="">
-                <img src="multimedia/image/pilar.png" alt="Detalle">
-                <h3 class="">CONFIABLE</h3>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, repudiandae praesentium! Ducimus, odit nulla aperiam commodi dolorem error saepe iste eum libero qui? Odio vitae alias reprehenderit voluptates veritatis explicabo.</p>
+            <div class="col">
+                <div class="card">
+                <img src="multimedia/image/pilar.png" class="card-img-top" id="img__info" alt="Detalle">
+                <div class="card-body info__card">
+                    <h5 class="card-title">Confiable</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium voluptate, sit molestiae, qui illum porro aliquam asperiores incidunt nihil non reprehenderit consequuntur esse facilis corrupti eos animi. Amet, magnam sunt!</p>
+                </div>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
+    
     <!-- footer -->
     <footer>
-        <div class="">
-            <img src="multimedia/image/logo-blanco.png" alt="Logo">
-            <a href="index.html">MARIANI MUEBLES</a>
+        <div class="footer-logo">
+            <img src="../../multimedia/image/logo-blanco.png" alt="Logo">
+            <a href="../../index.html">MARIANI MUEBLES</a>
         </div>
         <nav id="contact">
-            <ul class="">
-                <li class="">
-                    <img class="" src="multimedia/image/facebook.png" alt="Logo FB">
+            <ul class="contact-menu">
+                <li class="contact-item">
+                    <img class="" src="../../multimedia/image/facebook.png" alt="Logo FB">
                     <a target="_blank" href="https://www.facebook.com/">aca va el fb</a>
                 </li>
-                <li class="">
-                    <img class="" src="multimedia/image/whatsapp.png" alt="Logo WPP">
+                <li class="contact-item">
+                    <img class="" src="../../multimedia/image/whatsapp.png" alt="Logo WPP">
                     <a href="">11mm919mmm</a> 
                 </li>
-                <li class="">
-                    <img class="" src="multimedia/image/instagram.png" alt="Logo IG">
+                <li class="contact-item">
+                    <img class="" src="../../multimedia/image/instagram.png" alt="Logo IG">
                     <a target="_blank" href="https://www.instagram.com/mariani.muebles/">@mariani.muebles</a>
                 </li>
                 <li class="contact-item">
-                    <img class="" src="multimedia/image/email.png" alt="Logo mail">
-                    <a>amuebla.mariani@gmail.com</a>
+                    <img class="" src="../../multimedia/image/email.png" alt="Logo mail">
+                    <a href="...">amuebla.mariani@gmail.com</a>
                 </li>
             </ul>
         </nav>
     </footer>
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
