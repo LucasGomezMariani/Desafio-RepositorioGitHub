@@ -55,8 +55,8 @@
 </nav>
 <!-- Contenido -->
 <main class="main__index container-fluid">
-    <!-- section carrusel de categorias -->
-    <div class="container-fluid mt-3">
+    <!-- carrusel de categorias -->
+    <div class="container-fluid mt-3 carr__index">
         <div class="row">
             <div class="col-3">
                 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 ">
                 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active"><img src="multimedia/image/carr1.jpg" id="img__carousel" class="d-block " alt="img 1"></div>
@@ -96,7 +96,34 @@
             </div>
         </div>
     </div>
-    <!-- section proyectos especiales-->
+    <!-- carrusel para mobile -->
+    <div id="carr-mobile" class="carousel slide carr__mobile" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carr-mobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carr-mobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carr-mobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="multimedia/image/carr1.jpg" class="d-block w-100" alt="foto1">
+            </div>
+            <div class="carousel-item">
+                <img src="multimedia/image/carr1.jpg" class="d-block w-100" alt="foto2">
+            </div>
+            <div class="carousel-item">
+                <img src="multimedia/image/carr2.jpg" class="d-block w-100" alt="foto3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carr-mobile" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carr-mobile" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    <!-- proyectos especiales-->
     <div class="card mb-3 container mt-5 border border-secondarys">
         <div class="row g-2">
             <div class="col-md-7">
@@ -109,7 +136,7 @@
             <div class="col-md-5"><img src="multimedia/image/cocina_section_especiales.jpg" class="img-fluid rounded-start mt-3 mb-3" alt="Cocina a medida"></div>
         </div>
     </div>
-    <!--section info y detalles-->
+    <!-- info y detalles-->
     <div class="row row-cols-1 row-cols-md-2 g-4 index__info">
         <div class="col">
             <div class="card">

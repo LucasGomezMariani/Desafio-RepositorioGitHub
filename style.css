@@ -7,11 +7,6 @@ BOTONES     #8c8c8c
 DETALLES    #e4e2e1
 */
 
-/* Esto lo use para emparejar las imagenes a un tamaño apto a la pantalla mientras acomodaba el CSS */
-nav img{
-    height: 2rem;
-    }
-
 /* Reset config */
 *{
     padding: 0;
@@ -19,6 +14,11 @@ nav img{
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     font-size: 16px;
+}
+
+/* Header */
+nav img{
+    height: 2rem;
 }
 .header{
     position: sticky;
@@ -43,6 +43,8 @@ nav img{
 .navbar-brand{
     align-items: center;
 }
+/* End header */
+
 /* footer */
 footer{
     width: 100%;
@@ -59,13 +61,13 @@ footer{
     align-items: center;
 }
 .footer-logo img{
-    width: 4rem;
+    width: 4vw;
     height: auto;
     margin: 0 1rem;
 }
 .footer-logo a{
     width: max-content;
-    font-size: 2.5rem;
+    font-size: 4vw;
     margin: 0 1rem;
     text-decoration: none;
     color: #e4e2e1;
@@ -92,7 +94,7 @@ footer{
     justify-content: flex-start;
 }
 .contact-item img{
-    width: 2rem;
+    width: 4vw;
     height: auto;
     margin: 0 1rem;
 }
@@ -102,6 +104,12 @@ footer{
     font-size: 1rem;
 }
 /* end footer */
+
+/* index */
+.carr__mobile{
+    display: none;
+}
+/* nosotros */
 .banner{
     width: 100%;
     height: fit-content;
@@ -114,12 +122,11 @@ footer{
     width: 95%;
     height: fit-content;
 }
-
+/* end nosotros */
 
 /* media queris tablet */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
     *{font-size: 12px;}
-
     /* footer */
     .contact-menu{
         display: flex;
@@ -132,10 +139,17 @@ footer{
         display: flex;}
 }
 
+
     /* media queris mobile */
 @media screen and (max-width: 599px) {
     *{font-size: 12px;}
-
+    /* index */
+    .carr__index{
+        display: none;
+    }
+    .carr__mobile{
+        display: block;
+    }
     /* footer */
     footer {
         flex-direction: column;
