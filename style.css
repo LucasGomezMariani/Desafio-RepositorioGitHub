@@ -17,6 +17,13 @@ DETALLES    #e4e2e1
 }
 
 /* Header */
+.navbar-brand{
+    align-items: center;
+    transition: transform .2s;
+}
+.navbar-brand:hover{
+    transform: scale(1.1);
+}
 nav img{
     height: 2rem;
 }
@@ -25,26 +32,7 @@ nav img{
     top: 0;
     z-index: 2;
 }
-#img__carousel{
-    height: 12rem;
-}
-#img__info{
-    height: auto;
-    width: 30%;
-}
-
-.card{
-    border: none;
-    align-items: center;
-}
-.info__card{
-    text-align: center;
-}
-.navbar-brand{
-    align-items: center;
-}
-/* End header */
-
+/* end header */
 /* footer */
 footer{
     width: 100%;
@@ -83,10 +71,8 @@ footer{
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;
 }
 .contact-item{
-    width: 50%;
     padding: .5rem 0;
     display: flex;
     flex-direction: row;
@@ -103,11 +89,40 @@ footer{
     color: #e4e2e1;
     font-size: 1rem;
 }
+.footer-item{
+    transition: transform .2s;
+}
+.footer-item:hover{
+    transform: scale(1.2);
+}
+.footer-link{
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;}
+.footer-link:hover{
+color: rgba(255,255,255,.55);
+}
 /* end footer */
-
 /* index */
 .carr__mobile{
     display: none;
+}
+#img__info{
+    height: auto;
+    width: 30%;
+}
+.card{
+    align-items: center;
+}
+.info__card{
+    text-align: center;
+}
+/* End index */
+/* Categoria */
+.img-carr-categoria{
+    width: 100%;
+    height: 45vh;
+}
+.container-prod{
+    border-radius: .5rem;
 }
 /* nosotros */
 .banner{
@@ -126,23 +141,18 @@ footer{
 
 /* media queris tablet */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-    *{font-size: 12px;}
     /* footer */
     .contact-menu{
         display: flex;
         justify-content: space-evenly;}
     .contact-item{
         width: fit-content;}
-    .contact-item a{
-        display: none;}
     footer nav{
         display: flex;}
 }
 
-
     /* media queris mobile */
 @media screen and (max-width: 599px) {
-    *{font-size: 12px;}
     /* index */
     .carr__index{
         display: none;
@@ -159,6 +169,4 @@ footer{
         justify-content: space-evenly;}
     .contact-item{
         width: fit-content}
-    .contact-item a{
-        display: none}
 }
