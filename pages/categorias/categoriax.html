@@ -1,123 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria x</title>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- css -->
     <link rel="stylesheet" href="../../style.css">
 
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
 
+    <title>Categoria x</title>
 </head>
-<body class="grid-container">
-    <header>
-        <div class="header-logo">
-            <a href="../../index.html"><img class="logo"  src="../../multimedia/image/logo-blanco.png" alt="Logo de la empresa">
+
+<body class="w-100">
+    <!-- header -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="mr-2 img" src="../../multimedia/image/logo-blanco.png" alt="Logo de la empresa">
             </a>
-            <a class="header-marca" href="../../index.html">MARIANI MUEBLES</a>
+            <a class="navbar-brand" href="../../index.html">MARIANI MUEBLES</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">
+                                <img class="icn__buscador" src="../../multimedia/image/svglupa.svg" alt="lupa">
+                            </button>
+                        </form>
+                    </li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
+                                    class="dropdown-item">Cocina</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
+                                    class="dropdown-item">Baño</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
+                                    class="dropdown-item">Dormitorio</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
+                                    class="dropdown-item">Oficina</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
+                                    class="dropdown-item">Industrial</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="../../pages/info/nosotros.html" class="nav-link">Nosotros</a></li>
+                </ul>
+            </div>
         </div>
-        <!-- lista desordenada con los iconos navegables-->
-        <nav>
-                <ul class="header-menu">
-                    <li class="header-menuItem">
-                        <img class="" src="../../multimedia/image/lupa.png" alt="lupa">
-                        <!--icono, cuando te posicionas con el puntero se expanda y te de un cuadro de texto que diga "busqueda"-->
-                    </li>
-                    <li class="header-menuItem">
-                        <a href="#contact"><img class="" src="../../multimedia/image/atencion-al-cliente.png" alt="Contacto">
-                        </a>
-                    </li>
-                    <li class="header-menuItem">
-                        <img class="" src="../../multimedia/image/work-places.png" alt="WorkPlaces">
-                        <!--La idea es que sea un icono, en el cual cuando te posicionas sobre el con el puntero se expanda y te muestre las diferentes categorias con links a las mismas-->
-                    </li>
-                    <li class="header-menuItem"><a class="" href="../../pages/info/nosotros.html"><img class="" src="../../multimedia/image/equipo.png" alt="Nosotros"></a>
-                    </li>
-                </ul>                
-        </nav>
-    </header>
-    <main class="categorias__main-grid">
+    </nav>
+    <!-- Contenido -->
+    <main class="container-fluid">
         <!--carrusel de imagenes de productos-->
-        <section class="carrusel-container">
-            <h4>NUESTROS PRODUCTOS</h4>
-            <img src="../../multimedia/image/baño.jpg" alt="carrusel de productos">
-            <img src="../../multimedia/image/baño.jpg" alt="carrusel de productos">
-            <img src="../../multimedia/image/baño.jpg" alt="carrusel de productos">
-            <img src="../../multimedia/image/baño.jpg" alt="carrusel de productos">
-            <!--la idea es poner un carrusel y una barra de desplazamiento-->
+        <section id="carr-categoria" class="carousel slide container" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carr-categoria" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carr-categoria" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carr-categoria" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../../multimedia/image/carr1.jpg" class="d-block img-carr-categoria" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>NUESTROS PRODUCTOS</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../multimedia/image/carr1.jpg" class="d-block img-carr-categoria" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>NUESTROS PRODUCTOS</h5>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="../../multimedia/image/carr2.jpg" class="d-block img-carr-categoria" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>NUESTROS PRODUCTOS</h5>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carr-categoria" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carr-categoria" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </section>
         <!--Seccion de productos-->
-        <section class="product-container">
-            <div class="product-card">
-                <h3 class="card-title"><a href="../../pages/productos/plantilla-prod.html">Producto</a></h3>
-                <img class="" src="../../multimedia/image/producto.png" alt="carrucel de producto">
-                <!--link a la pagina del producto-->
-                <!--barra de progreso del carrusel-->
+        <section class="container mt-3 w-75 border pt-3 container-prod">
+            <h1 class="mb-3">Productos.</h1>
+            <!-- div contenedor -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="text-bg-light mb-3 border-secondary">
+                        <a href="../../pages/productos/plantilla-prod.html" class="btn card">
+                            <h4 class="card-title ">Nombre del producto</h4>
+                            <div class="card-body">
+                                <img class="card-img-top" src="../../multimedia/image/producto.png" alt="producto">
+                                <p class="card-text mt-3 btn">breve descripcion Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-bg-light mb-3 border-secondary">
+                        <a href="../../pages/productos/plantilla-prod.html" class="btn card">
+                            <h4 class="card-title ">Nombre del producto</h4>
+                            <div class="card-body">
+                                <img class="card-img-top" src="../../multimedia/image/producto.png" alt="producto">
+                                <p class="card-text mt-3 btn">breve descripcion Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-bg-light mb-3 border-secondary">
+                        <a href="../../pages/productos/plantilla-prod.html" class="btn card">
+                            <h4 class="card-title ">Nombre del producto</h4>
+                            <div class="card-body">
+                                <img class="card-img-top" src="../../multimedia/image/producto.png" alt="producto">
+                                <p class="card-text mt-3 btn">breve descripcion Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-bg-light mb-3 border-secondary">
+                        <a href="../../pages/productos/plantilla-prod.html" class="btn card">
+                            <h4 class="card-title ">Nombre del producto</h4>
+                            <div class="card-body">
+                                <img class="card-img-top" src="../../multimedia/image/producto.png" alt="producto">
+                                <p class="card-text mt-3 btn">breve descripcion Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-bg-light mb-3 border-secondary">
+                        <a href="../../pages/productos/plantilla-prod.html" class="btn card">
+                            <h4 class="card-title ">Nombre del producto</h4>
+                            <div class="card-body">
+                                <img class="card-img-top" src="../../multimedia/image/producto.png" alt="producto">
+                                <p class="card-text mt-3 btn">breve descripcion Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="text-bg-light mb-3 border-secondary">
+                        <a href="../../pages/productos/plantilla-prod.html" class="btn card">
+                            <h4 class="card-title ">Nombre del producto</h4>
+                            <div class="card-body">
+                                <img class="card-img-top" src="../../multimedia/image/producto.png" alt="producto">
+                                <p class="card-text mt-3 btn">breve descripcion Lorem ipsum dolor sit amet consectetur.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
             </div>
-            <div  class="product-card">
-                <h3 class="card-title"><a href="../../pages/productos/plantilla-prod.html">Producto</a></h3>
-                <img class="" src="../../multimedia/image/producto.png"  alt="carrucel de producto">
-                <!--link a la pagina del producto-->
-                <!--barra de progreso del carrusel-->
-            </div>
-            <div class="product-card">
-                <h3 class="card-title"><a href="../../pages/productos/plantilla-prod.html">Producto</a></h3>
-                <img class="" src="../../multimedia/image/producto.png"  alt="carrucel de producto">
-                <!--link a la pagina del producto-->
-                <!--barra de progreso del carrusel-->
-            </div>
-            <div class="product-card">
-                <h3 class="card-title"><a href="../../pages/productos/plantilla-prod.html">Producto</a></h3>
-                <img class="" src="../../multimedia/image/producto.png"  alt="carrucel de producto">
-                <!--link a la pagina del producto-->
-                <!--barra de progreso del carrusel-->
-            </div>
-            <div class="product-card">
-                <h3 class="card-title"><a href="../../pages/productos/plantilla-prod.html">Producto</a></h3>
-                <img class="" src="../../multimedia/image/producto.png"  alt="carrucel de producto">
-                <!--link a la pagina del producto-->
-                <!--barra de progreso del carrusel-->
-            </div>
-            <div class="product-card">
-                <h3 class="card-title"><a href="../../pages/productos/plantilla-prod.html">Producto</a></h3>
-                <img class="" src="../../multimedia/image/producto.png"  alt="carrucel de producto">
-                <!--link a la pagina del producto-->
-                <!--barra de progreso del carrusel-->
+            <!--link a la pagina del producto-->
+            <!--barra de progreso del carrusel-->
             </div>
         </section>
-        <div class="GoTop">
-            <a href="">VOLVER ARRIBA.</a>
+        <div class="GoTop text-center mt-5 mb-5">
+            <a class="btn btn-outline-dark" href="#">VOLVER ARRIBA.</a>
         </div>
     </main>
+    <!-- footer -->
     <footer>
         <div class="footer-logo">
             <img src="../../multimedia/image/logo-blanco.png" alt="Logo">
-            <a href="../../index.html">MARIANI MUEBLES</a>
+            <a class="footer-link" href="../../index.html">MARIANI MUEBLES</a>
         </div>
         <nav id="contact">
             <ul class="contact-menu">
                 <li class="contact-item">
-                    <img class="" src="../../multimedia/image/facebook.png" alt="Logo FB">
-                    <a target="_blank" href="https://www.facebook.com/">aca va el fb</a>
+                    <a target="_blank" href="https://www.facebook.com/"><img class="footer-item"
+                            src="../../multimedia/image/facebook.png" alt="Logo FB"></a>
                 </li>
                 <li class="contact-item">
-                    <img class="" src="../../multimedia/image/whatsapp.png" alt="Logo WPP">
-                    <a href="">11mm919mmm</a> 
+                    <a href="https://wa.me/541122919313" target="_blank"><img class="footer-item"
+                            src="../../multimedia/image/whatsapp.png" alt="Logo WPP"></a>
                 </li>
                 <li class="contact-item">
-                    <img class="" src="../../multimedia/image/instagram.png" alt="Logo IG">
-                    <a target="_blank" href="https://www.instagram.com/mariani.muebles/">@mariani.muebles</a>
-                </li>
-                <li class="contact-item">
-                    <img class="" src="../../multimedia/image/email.png" alt="Logo mail">
-                    <a>amuebla.mariani@gmail.com</a>
+                    <a target="_blank" href="https://www.instagram.com/mariani.muebles/"><img class="footer-item"
+                            src="../../multimedia/image/instagram.png" alt="Logo IG"></a>
                 </li>
             </ul>
         </nav>
     </footer>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

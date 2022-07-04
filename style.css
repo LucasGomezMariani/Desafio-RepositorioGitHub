@@ -7,11 +7,6 @@ BOTONES     #8c8c8c
 DETALLES    #e4e2e1
 */
 
-/* Esto lo use para emparejar las imagenes a un tamaño apto a la pantalla mientras acomodaba el CSS */
-nav img{
-    height: 2rem;
-    }
-
 /* Reset config */
 *{
     padding: 0;
@@ -20,29 +15,24 @@ nav img{
     box-sizing: border-box;
     font-size: 16px;
 }
+
+/* Header */
+.navbar-brand{
+    align-items: center;
+    transition: transform .2s;
+}
+.navbar-brand:hover{
+    transform: scale(1.1);
+}
+nav img{
+    height: 2rem;
+}
 .header{
     position: sticky;
     top: 0;
     z-index: 2;
 }
-#img__carousel{
-    height: 12rem;
-}
-#img__info{
-    height: auto;
-    width: 30%;
-}
-
-.card{
-    border: none;
-    align-items: center;
-}
-.info__card{
-    text-align: center;
-}
-.navbar-brand{
-    align-items: center;
-}
+/* end header */
 /* footer */
 footer{
     width: 100%;
@@ -59,13 +49,13 @@ footer{
     align-items: center;
 }
 .footer-logo img{
-    width: 4rem;
+    width: 4vw;
     height: auto;
     margin: 0 1rem;
 }
 .footer-logo a{
     width: max-content;
-    font-size: 2.5rem;
+    font-size: 4vw;
     margin: 0 1rem;
     text-decoration: none;
     color: #e4e2e1;
@@ -81,10 +71,8 @@ footer{
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;
 }
 .contact-item{
-    width: 50%;
     padding: .5rem 0;
     display: flex;
     flex-direction: row;
@@ -92,7 +80,7 @@ footer{
     justify-content: flex-start;
 }
 .contact-item img{
-    width: 2rem;
+    width: 4vw;
     height: auto;
     margin: 0 1rem;
 }
@@ -101,7 +89,47 @@ footer{
     color: #e4e2e1;
     font-size: 1rem;
 }
+.footer-item{
+    transition: transform .2s;
+}
+.footer-item:hover{
+    transform: scale(1.2);
+}
+.footer-link{
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;}
+.footer-link:hover{
+color: rgba(255,255,255,.55);
+}
 /* end footer */
+/* index */
+.carr__mobile{
+    display: none;
+}
+.fs{
+    font-size: 1.7vw;
+}
+#img__info{
+    height: auto;
+    width: 30%;
+}
+.card-index{
+    align-items: center;
+    border: none;
+}
+.info__card{
+    text-align: center;
+}
+/* End index.HTML */
+/* Categoria.HTML */
+.img-carr-categoria{
+    width: 100%;
+    height: 45vh;
+}
+.container-prod{
+    border-radius: .5rem;
+}
+/* end categoria.HTML */
+/* nosotros.HTML */
 .banner{
     width: 100%;
     height: fit-content;
@@ -114,28 +142,34 @@ footer{
     width: 95%;
     height: fit-content;
 }
-
+/* end nosotros.HTML */
+/* presupuestos.HTML */
+.form-control{
+    border-radius: .5rem;
+}
+/* end presupuestos.HTML */
 
 /* media queris tablet */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-    *{font-size: 12px;}
-
     /* footer */
     .contact-menu{
         display: flex;
         justify-content: space-evenly;}
     .contact-item{
         width: fit-content;}
-    .contact-item a{
-        display: none;}
     footer nav{
         display: flex;}
 }
 
     /* media queris mobile */
 @media screen and (max-width: 599px) {
-    *{font-size: 12px;}
-
+    /* index */
+    .carr__index{
+        display: none;
+    }
+    .carr__mobile{
+        display: block;
+    }
     /* footer */
     footer {
         flex-direction: column;
@@ -145,6 +179,4 @@ footer{
         justify-content: space-evenly;}
     .contact-item{
         width: fit-content}
-    .contact-item a{
-        display: none}
 }
