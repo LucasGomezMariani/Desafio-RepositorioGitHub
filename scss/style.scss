@@ -1,0 +1,21 @@
+@import "variable";
+@import "components/header";
+@import "components/footer";
+@import "components/index";
+@import "components/categoriax";
+@import "components/nosotros";
+
+/* reset config */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+    
+/* presupuestos.HTML */
+.form-control{
+    border-radius: .5rem;
+}
+/* end presupuestos.HTML */
