@@ -1,0 +1,12 @@
+.banner{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    grid-area: video;
+}
+.banner__video{
+    width: 95%;
+    height: fit-content;
+}

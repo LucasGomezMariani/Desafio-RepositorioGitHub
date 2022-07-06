@@ -1,0 +1,15 @@
+.navbar-brand{
+    align-items: center;
+    transition: transform .2s;
+}
+.navbar-brand:hover{
+    transform: scale(1.1);
+}
+nav img{
+    height: 2rem;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
