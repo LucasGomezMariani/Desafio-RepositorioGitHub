@@ -1,10 +1,3 @@
-@import "variable";
-@import "components/header";
-@import "components/footer";
-@import "components/index";
-@import "components/categoriax";
-@import "components/nosotros";
-
 /* reset config */
 *{
     padding: 0;
@@ -13,9 +6,16 @@
     box-sizing: border-box;
     font-size: 16px;
 }
-    
+ 
+@import "variable";
+@import "components/header";
+@import "components/footer";
+@import "components/index";
+@import "components/categoriax";
+@import "components/nosotros";
+
 /* presupuestos.HTML */
 .form-control{
-    border-radius: .5rem;
+    border-radius: $radio;
 }
 /* end presupuestos.HTML */

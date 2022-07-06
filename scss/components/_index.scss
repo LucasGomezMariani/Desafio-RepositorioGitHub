@@ -1,26 +1,21 @@
 .carr__mobile{
     display: none;
+
+    @media screen and (max-width: 599px) {display: block;}
 }
-.fs{
-    font-size: 1.7vw;
-}
+
 #img__info{
     height: auto;
     width: 30%;
 }
+
 .card-index{
     align-items: center;
     border: none;
-}
-.info__card{
-    text-align: center;
+
+    @media screen and (max-width: 599px) {display: none;}
 }
 
-@media screen and (max-width: 599px) {
-    .carr__index{
-        display: none;
-    }
-    .carr__mobile{
-        display: block;
-    }
+.info__card{
+    text-align: center;
 }
