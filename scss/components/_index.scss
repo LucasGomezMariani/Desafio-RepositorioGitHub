@@ -1,0 +1,26 @@
+.carr__mobile{
+    display: none;
+}
+.fs{
+    font-size: 1.7vw;
+}
+#img__info{
+    height: auto;
+    width: 30%;
+}
+.card-index{
+    align-items: center;
+    border: none;
+}
+.info__card{
+    text-align: center;
+}
+
+@media screen and (max-width: 599px) {
+    .carr__index{
+        display: none;
+    }
+    .carr__mobile{
+        display: block;
+    }
+}
