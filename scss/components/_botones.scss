@@ -1,0 +1,19 @@
+.boton{
+    border-radius: map-get($boton , radio);
+    padding: map-get($boton, padd);
+    border: map-get($boton, border);
+    background-color: map-get($boton , bg);
+    color: map-get($boton, relleno );
+    font-size: map-get($boton, size );
+    text-decoration: none;
+
+    &:active{
+        background-color: map-get($boton , bg-act );
+        color: map-get($boton , relleno-act );
+    }
+    &:hover{
+        background-color: map-get($boton , bg-act);
+        color: map-get($boton , relleno-act);
+    }
+
+}

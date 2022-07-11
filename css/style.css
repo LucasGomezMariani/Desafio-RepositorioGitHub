@@ -1,17 +1,21 @@
-/* reset config */
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
-  font-size: 16px;
+/* No puse mas variables por que no se me ocurrieron jajaja, trate de armar la mayoria con bootstrap */
+/* Colores */
+.card-categorias, .card-index {
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0.25rem;
 }
 
-/* No puse mas variables por que no se me ocurrieron jajaja, trate de armar la mayoria con bootstrap */
 .header {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 9;
 }
 
 .navbar-brand {
@@ -127,10 +131,6 @@ footer {
   width: 30%;
 }
 
-.card-index {
-  align-items: center;
-  border: none;
-}
 @media screen and (max-width: 599px) {
   .card-index {
     display: none;
@@ -150,6 +150,10 @@ footer {
   border-radius: 0.5rem;
 }
 
+.card-categorias {
+  border: 1px solid #829187;
+}
+
 .banner {
   width: 100%;
   height: fit-content;
@@ -162,6 +166,33 @@ footer {
 .banner__video {
   width: 95%;
   height: fit-content;
+}
+
+.boton {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #515C55;
+  background-color: #C6E1D0;
+  color: #355C43;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.boton:active {
+  background-color: #62A87C;
+  color: #F4F4D1;
+}
+.boton:hover {
+  background-color: #62A87C;
+  color: #F4F4D1;
+}
+
+/* reset config */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 /* presupuestos.HTML */

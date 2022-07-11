@@ -1,0 +1,10 @@
+$boton: (
+    radio: .5rem,
+    padd: .5rem 1rem,
+    border: 1px solid nth($color, 3),
+    bg: nth($color , 5),
+    relleno: nth($color, 6),
+    bg-act: nth($color, 4),
+    relleno-act: nth($color, 1),
+    size: 1.2rem,
+)

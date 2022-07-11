@@ -10,9 +10,7 @@
 }
 
 .card-index{
-    align-items: center;
-    border: none;
-
+    @extend %tarjetas;
     @media screen and (max-width: 599px) {display: none;}
 }
 

@@ -1,3 +1,13 @@
+@import "base/variable";
+@import "base/mapas";
+@import "base/extends";
+@import "components/header";
+@import "components/footer";
+@import "components/index";
+@import "components/categoriax";
+@import "components/nosotros";
+@import "components/botones";
+
 /* reset config */
 *{
     padding: 0;
@@ -6,13 +16,6 @@
     box-sizing: border-box;
     font-size: 16px;
 }
- 
-@import "variable";
-@import "components/header";
-@import "components/footer";
-@import "components/index";
-@import "components/categoriax";
-@import "components/nosotros";
 
 /* presupuestos.HTML */
 .form-control{
