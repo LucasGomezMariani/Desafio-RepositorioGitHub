@@ -21,7 +21,7 @@
     <title>Presupuestar</title>
 </head>
 
-<body class="w-100">
+<body class="w-100 h-100">
     <!-- header -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark header">
         <div class="container-fluid">
@@ -70,43 +70,43 @@
         <div class="container ">
             <div class="row">
                 <div class="col">
-                    <div class="card mt-5 border-0">
-                        <h1 class="card-title">Consulta</h1>
-                        <p class="card-text">En caso de poseer, adjuntar documentacion o imagenes de referencia</p>
+                    <div class="card mt-4 border-0">
+                        <h1 class="card-title">Presupuestar</h1>
+                        <p class="card-text">Haga su consulta sin cargo y nosotros a la brevedad estaremos resolviendo sus dudas. <br> En caso de poseer, adjunte documentacion o imagenes de referencia</p>
                     </div>
-    
-                    
-                    <div class="input-group mt-3 d-flex">
-                        <input type="text" class="form-control" placeholder="Nombre y Apellido." aria-label="Username">
-                    <div class="input-group d">
-                        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-                    </div>
-                </div>
-
-
                 </div>
             </div>
-        </div>
-
-
-
-
-
-
-
-        
             <form>
-            <div class="input__firstRow">
-                <input type="text" name="name" placeholder="Nombre y Apellido">
-                <input type="tel" name="tel" placeholder="Telefono">
-            </div>
-            <input class="input__secondRow" type="email" name="email" placeholder="Email">
-            <textarea name="consulta" placeholder="Detalle su consulta."></textarea>
-            <div class="enviar">
-                <img src="../../multimedia/image/clip.png" alt="Adjuntar">
-                <input type="button" value="Enviar">
-            </div>
-        </form>
+                <div class="row mb-3">
+                    <div class="col-8">
+                        <div class="input-group mt-3 d-flex">
+                            <input type="text" class="form-control" placeholder="Nombre y Apellido."
+                                aria-label="Username">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group mt-3 d-flex">
+                            <input type="tel" class="form-control" placeholder="Telefono" aria-label="phone-number">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="email" placeholder="Email." class="form-control mb-2" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie. La informacion
+                        proporsionada al sitio es confidencial.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Presupuestos Mariani Muebles."
+                        id="textarea-presupuestos" style="height: 100px"></textarea>
+                    <label for="textarea-presupuestos">Detalle aqui su consulta.</label>
+                </div>
+                <div class="enviar mb-5">
+                    <a href="#"><img src="../../multimedia/image/clip.png" class="pe-3" alt="Adjuntar"></a>
+                    <input class="boton" type="button" value="Enviar">
+                </div>
+
+            </form>
+        </div>
     </main>
     <!-- footer -->
     <footer>

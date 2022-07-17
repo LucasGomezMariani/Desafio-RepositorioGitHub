@@ -21,6 +21,24 @@
   border-radius: 0.25rem;
 }
 
+.boton {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #515C55;
+  background-color: #C6E1D0;
+  color: #355C43;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.boton:active {
+  background-color: #62A87C;
+  color: #F4F4D1;
+}
+.boton:hover {
+  background-color: #62A87C;
+  color: #F4F4D1;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -177,27 +195,63 @@ footer {
   height: fit-content;
 }
 
-.boton {
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid #515C55;
-  background-color: #C6E1D0;
-  color: #355C43;
-  font-size: 1.2rem;
-  text-decoration: none;
+.prod__title :nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.boton:active {
-  background-color: #62A87C;
-  color: #F4F4D1;
-}
-.boton:hover {
-  background-color: #62A87C;
-  color: #F4F4D1;
+.prod__title img {
+  width: 35px;
+  height: auto;
 }
 
+.prod_img_secundarias_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (max-width: 575px) {
+  .prod_img_secundarias_container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.prod_img_secundarias_container .prod_img_secundaria {
+  width: 70%;
+  height: auto;
+}
+@media screen and (max-width: 575px) {
+  .prod_img_secundarias_container .prod_img_secundaria {
+    width: 30vw;
+    padding: 0.5rem;
+  }
+}
+
+.prod_descripcion {
+  min-height: 100%;
+}
+
+.prod_precio {
+  display: flex;
+  align-content: center;
+}
+.prod_precioinput {
+  width: 130px;
+}
 /* presupuestos.HTML */
 .form-control {
   border-radius: 0.5rem;
+}
+
+.enviar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.enviar img {
+  width: auto;
+  height: 2rem;
 }
 
 /* end presupuestos.HTML */

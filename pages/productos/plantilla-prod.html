@@ -67,66 +67,80 @@
     </nav>
     <!-- Contenido -->
     <main class="container-fluid">
-        <div>
-            <h1></h1>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-        <div class="prod__title">
-            <h1>Titulo del producto.</h1>
-            <div class="prod__title__copartir__img">
-                <img src="../../multimedia/image/avion-de-papel.png" alt="">
-                <img src="../../multimedia/image/instagram.png" alt="">
-                <img src="../../multimedia/image/twitter.png" alt="">
-                <img src="../../multimedia/image/whatsapp.png" alt="">
+        <!-- titulo -->
+        <div class="prod__title container-fluid d-flex border-bottom pt-3 pb-2">
+            <div class="flex-grow-1">
+                <h1>Titulo del producto.</h1>
+            </div>
+            <div class="">
+                <img class="m-2" src="../../multimedia/image/avion-de-papel.png" alt="compartir">
+                <img class="m-2" src="../../multimedia/image/instagram.png" alt="instagram">
+                <img class="m-2" src="../../multimedia/image/twitter.png" alt="twitter">
+                <img class="m-2" src="../../multimedia/image/whatsapp.png" alt="whatsapp">
             </div>
         </div>
-        <div class="prod__ppl">
-            <!-- La idea es que sea como la img ppl de mercado libre, y cuando selecciono alguna de las de la derecha, esta se sustituya por la seleccionada -->
-            <div class="prod__ppl__img">
-                <img src="../../multimedia/image/baño.jpg" alt="">
-            </div>
-            <div class="prod__ppl__img__sec">
-                <img src="../../multimedia/image/icon_baño.png" alt="producto">
-                <img src="../../multimedia/image/icon_baño.png" alt="producto">
-                <img src="../../multimedia/image/icon_baño.png" alt="producto">
-            </div>
-            <div class="prod__ppl__info">
-                <div class="prod__ppl__descripcion">
-                    <h2>Descripción.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi ex, quae nam porro ea sed, quo
-                        consectetur ipsa, sunt illo adipisci beatae et nemo mollitia distinctio nostrum iure aliquid
-                        non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio dolore veritatis
-                        recusandae ab ipsa aliquid non! aliquam, dolore quibusdam natus sint cupiditate necessitatibus
-                        dolor a, unde eum quos magni neque in dolorem.</p>
+        <!-- info prod -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-sm-8 col-lg-5">
+                    <img class="img-fluid" src="../../multimedia/image/baño.jpg" alt="">
                 </div>
-                <div class="prod__precio">
-                    <p class="prod__precio__num">$$$$$</p>
-                    <div class="prod__cant">
-                        <p class="prod__cant__titulo">Cantidad</p>
-                        <!-- "P" para simular una entrada de texto que multiplique el precio -->
-                        <p class="prod__cant__num">xx</p>
+                <div class="col-sm-4 col-lg-3 prod_img_secundarias_container">
+                    <img class="prod_img_secundaria m-2" src="../../multimedia/image/icon_baño.png" alt="producto">
+                    <img class="prod_img_secundaria m-2" src="../../multimedia/image/icon_baño.png" alt="producto">
+                    <img class="prod_img_secundaria m-2" src="../../multimedia/image/icon_baño.png" alt="producto">
+                </div>
+                <div class="col-lg-4">
+                    <div class="card prod_descripcion">
+                        <div class="card-body">
+                            <h2 class="card-title">Descripción</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam molestias quae soluta iste quia itaque, sequi blanditiis consectetur amet, laborum magnam repellat mollitia nisi dolores minima corrupti at earum voluptates!</p>
+
+                            <div class="prod_precio row">
+                                <div class="col">
+                                    <h3>$$$$$</h3>
+                                </div>
+                                <div class="col">
+                                    <form>
+                                        <div class="prod_cantidad">
+                                            <label for="prod_cantidad" class="form-label">Cantidad.</label>
+                                            <input type="number" class="form-control" id="prod_cantidad">
+                                          </div>
+                                        </form>
+                                </div>
+                            </div>
+
+                            <ul class="prod__color">
+                                <li>Negro</li>
+                                <li>Blanco</li>
+                                <li>Marron</li>
+                            </ul>
+
+                            <div class="prod__comprar">
+                                <a href="#">Comprar</a>
+                            </div>
+
+
+
+
+                        </div>
                     </div>
+
+
+
+
+                    <!-- Voy a usar un ul para simular unos botones para seleccionar el color -->
+                    <!-- Boton de compra -->
                 </div>
-                <!-- Voy a usar un ul para simular unos botones para seleccionar el color -->
-                <ul class="prod__color">
-                    <li>Negro</li>
-                    <li>Blanco</li>
-                    <li>Marron</li>
-                </ul>
-                <!-- Boton de compra -->
-                <div class="prod__comprar">
-                    <a href="#">Comprar</a>
-                </div>
+            </div>
+
+        </div>
+        <!-- Comentarios -->
+        <div></div>
+        <!-- Info de servicio -->
+        <div></div>
+
+
             </div>
         </div>
         <div class="preguntas">

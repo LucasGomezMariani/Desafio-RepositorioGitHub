@@ -11,15 +11,26 @@
 @import "base/mapas";
 @import "base/extends";
 @import "base/mixins";
+@import "components/botones";
 @import "components/header";
 @import "components/footer";
 @import "components/index";
 @import "components/categoriax";
 @import "components/nosotros";
-@import "components/botones";
+@import "components/productos";
 
 /* presupuestos.HTML */
 .form-control{
     border-radius: $radio;
 }
+.enviar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    img{
+        width: auto;
+        height: 2rem;
+    }
+}
 /* end presupuestos.HTML */
+
