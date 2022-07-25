@@ -9,7 +9,7 @@
 
 /* No puse mas variables por que no se me ocurrieron jajaja, trate de armar la mayoria con bootstrap */
 /* Colores */
-.card-categorias, .card-index {
+.card-index, .card-categorias {
   align-items: center;
   position: relative;
   display: flex;
@@ -109,6 +109,8 @@ footer {
   list-style: none;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 #contact .contact-menu .contact-item {
   display: flex;
@@ -122,10 +124,10 @@ footer {
   height: auto;
   margin: 0 1rem;
 }
-#contact .contact-menu .contact-item a {
-  text-decoration: none;
-  color: #e4e2e1;
-  font-size: 1rem;
+@media screen and (max-width: 599px) {
+  #contact .contact-menu .contact-item img {
+    width: 5vw;
+  }
 }
 #contact .contact-menu .contact-item .footer-item {
   transition: transform 0.2s;
@@ -142,52 +144,6 @@ footer {
   #contact .contact-menu .contact-item {
     width: fit-content;
   }
-}
-
-.carr_container {
-  height: 300px;
-}
-.carr_container .img_carr {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-  margin: auto;
-}
-
-@media screen and (max-width: 599px) {
-  .carr__index {
-    display: none;
-  }
-}
-
-.carr__mobile {
-  display: none;
-}
-@media screen and (max-width: 599px) {
-  .carr__mobile {
-    display: block;
-  }
-}
-
-#img__info {
-  height: auto;
-  width: 30%;
-}
-
-@media screen and (max-width: 599px) {
-  .card-index {
-    display: none;
-  }
-}
-
-.info__card {
-  text-align: center;
-}
-
-.img-carr-categoria {
-  width: 100%;
-  height: 45vh;
-  object-fit: cover;
 }
 
 .container-prod {
@@ -265,6 +221,16 @@ footer {
   }
 }
 
+/* Carrousel */
+.img-carr {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+/* end Carrousel */
+/* index */
+/* end index */
 /* presupuestos.HTML */
 .form-control {
   border-radius: 0.5rem;

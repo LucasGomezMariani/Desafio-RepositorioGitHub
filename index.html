@@ -72,98 +72,51 @@
     </nav>
     <!-- Contenido -->
     <main class="main__index container-fluid">
-        <!-- carrusel de categorias -->
-        <section class="container-fluid mt-3 carr__index">
-            <div class="row d-flex justify-content-around">
-                <div class="col-3">
-                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active carr_container"><img src="multimedia/image/baño1.jpg"
-                                    id="img__carousel" class="img_carr d-block" alt="Cocina"></div>
-                            <div class="carousel-item carr_container"><img src="multimedia/image/baño2.jpg"
-                                    id="img__carousel" class="img_carr d-block" alt="Cocina moderna"></div>
-                            <div class="carousel-item carr_container"><img src="multimedia/image/baño3.jpg"
-                                    id="img__carousel" class="img_carr d-block" alt="Cocina moderna"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active carr_container"><img src="multimedia/image/cocina1.webp"
-                                    id="img__carousel" class="img_carr d-block img-fluid" alt="Cocina"></div>
-                            <div class="carousel-item carr_container"><img src="multimedia/image/cocina2.webp"
-                                    id="img__carousel" class="img_carr d-block img-fluid" alt="Cocina moderna"></div>
-                            <div class="carousel-item carr_container"><img src="multimedia/image/cocina3.webp"
-                                    id="img__carousel" class="img_carr d-block img-fluid" alt="Cocina moderna"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active carr_container"><img src="multimedia/image/ofi1.webp"
-                                    id="img__carousel" class="img_carr d-block img-fluid" alt="Cocina"></div>
-                            <div class="carousel-item carr_container"><img src="multimedia/image/ofi2.webp"
-                                    id="img__carousel" class="img_carr d-block img-fluid" alt="Cocina moderna"></div>
-                            <div class="carousel-item carr_container"><img src="multimedia/image/ofi3.webp"
-                                    id="img__carousel" class="img_carr d-block img-fluid" alt="Cocina moderna"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 ">
-                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active carr_container"><img src="multimedia/image/dorm1.webp"
-                                    id="img__carousel" class="img_carr d-block img-fluid" alt="Cocina"></div>
-                            <div class="carousel-item carr_container"><img src="multimedia/image/dorm2.webp"
-                                    id="img__carousel" class="img_carr d-block img-fluid" alt="Cocina moderna"></div>
-                            <div class="carousel-item carr_container"><img src="multimedia/image/dorm3.webp"
-                                    id="img__carousel" class="img_carr d-block img-fluid" alt="Cocina moderna"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- carrusel para mobile -->
-        <section id="carr-mobile" class="carousel slide carr__mobile" data-bs-ride="true">
+        <!-- carrusel -->
+        <section id="carr-categoria" class="carousel slide container-fluid" data-bs-ride="true">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carr-mobile" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#carr-categoria" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carr-mobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carr-mobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carr-categoria" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carr-categoria" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="multimedia/image/cocina1.webp" class="d-block w-100" alt="Cocina moderna">
+                    <img src="../../multimedia/image/cocina1.webp" class="d-block img-carr"
+                        alt="Cocina moderna">
                 </div>
                 <div class="carousel-item">
-                    <img src="multimedia/image/dorm2.webp" class="d-block w-100" alt="Cocina moderna">
+                    <img src="../../multimedia/image/cocina2.webp" class="d-block img-carr"
+                        alt="Cocina moderna">
                 </div>
-                <div class="carousel-item">
-                    <img src="multimedia/image/dorm1.webp" class="d-block w-100" alt="Cocina moderna">
+                <div class="carousel-item ">
+                    <img src="../../multimedia/image/cocina3.webp" class="d-block img-carr"
+                        alt="Cocina moderna">
                 </div>
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carr-mobile" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carr-categoria" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carr-mobile" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carr-categoria" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </section>
         <!-- proyectos especiales-->
-        <section class="card mb-3 container mt-5 border border-secondarys mb-5">
+        <section class="card mb-3 container mt-5 border border-secondarys mb-3">
             <div class="row">
                 <div class="col-md-7 col-lg-8">
-                    <div class="card-body text-center d-flex flex-column align-items-center">
-                        <h2 class="card-title mb-3 fs-1">Proyectos especiales.</h2>
-                        <p class="card-text fs-5 mb-5">Brindamos un servicio excepcional y especializado en cada uno de
-                            nuestros clientes. <br> Realizamos un relevamiento de los espacios a intervenir, planteamos
+                    <div class="h-100 card-body text-center d-flex flex-column align-items-center justify-content-evenly">
+                        <h2 class="card-title">Proyectos especiales.</h2>
+                        <p class="card-text fs-5">Brindamos un servicio excepcional y especializado en cada uno de
+                            nuestros clientes. Realizamos un relevamiento de los espacios a intervenir, planteamos
                             las necesidades del cliente y desarrollamos el diseño para estar a la altura de las
                             espectativas del sueño del hogar perfecto. </p>
-                        <a role="button" href="pages/info/presupuesto.html" class=" boton">Presupuestar</a>
+                        <a role="button" href="pages/info/presupuesto.html" class="boton">Presupuestar</a>
                     </div>
                 </div>
                 <div class="col"><img src="multimedia/image/cocina_section_especiales.jpg"
@@ -171,11 +124,11 @@
             </div>
         </section>
         <!-- info y detalles-->
-        <section class="row row-cols-1 row-cols-md-2 g-4 index__info mb-5">
+        <section class="row row-cols-1 row-cols-md-2 g-4 index__info mb-5 d-none d-sm-flex">
             <div class="col">
                 <div class="card-index">
-                    <img src="multimedia/image/1.png" id="img__info" class="card-img-top" alt="Krion">
-                    <div class="card-body info__card">
+                    <img src="multimedia/image/1.png" id="img__info" class="card-img-top w-25" alt="Krion">
+                    <div class="card-body text-center">
                         <h3 class="card-title fs-3">MATERIALES</h3>
                         <p class="card-text fs-5">Trabajamos con la mas alta calidad de materiales disponibles
                             actualmente en el mercado nacional. Melamina Fablac de grupo Arauco.</p>
@@ -184,8 +137,8 @@
             </div>
             <div class="col">
                 <div class="card-index">
-                    <img src="multimedia/image/2.jpg" alt="Krion" id="img__info" class="card-img-top">
-                    <div class="card-body info__card">
+                    <img src="multimedia/image/2.jpg" alt="Krion" id="img__info" class="card-img-top w-25">
+                    <div class="card-body text-center">
                         <h3 class="card-title fs-3">KRION</h3>
                         <p class="card-text fs-5">SolidSurface numero uno a nivel mundial. Krion nos ofrece la
                             posibilidad de diseñar nuestros mobiliarios con la morfologia que sea, ya que es
@@ -195,8 +148,8 @@
             </div>
             <div class="col">
                 <div class="card-index">
-                    <img src="multimedia/image/5.png" class="card-img-top" id="img__info" alt="Detalle">
-                    <div class="card-body info__card">
+                    <img src="multimedia/image/5.png" class="card-img-top w-25" id="img__info" alt="Detalle">
+                    <div class="card-body text-center">
                         <h3 class="card-title fs-3">Detalles</h3>
                         <p class="card-text fs-5">Trabajamos hasta el ultimo detalle para que tus espacios tengan el
                             alcance completo del diseño vanguardista de la tendencia</p>
@@ -205,8 +158,8 @@
             </div>
             <div class="col">
                 <div class="card-index">
-                    <img src="multimedia/image/pilar.png" class="card-img-top" id="img__info" alt="Detalle">
-                    <div class="card-body info__card">
+                    <img src="multimedia/image/pilar.png" class="card-img-top w-25" id="img__info" alt="Detalle">
+                    <div class="card-body text-center">
                         <h3 class="card-title fs-3">Confiable</h3>
                         <p class="card-text fs-5">Ofrecemos garantia completa de los trabajos realizados. Asi como del
                             cambio de herrajes en caso de desperfecto de fabrica.</p>
@@ -225,15 +178,15 @@
             <ul class="contact-menu">
                 <li class="contact-item">
                     <a target="_blank" href="https://www.facebook.com/"><img class="footer-item"
-                            src="multimedia/image/facebook.png" alt="Logo FB"></a>
+                            src="multimedia/image/fb-blanco.png" alt="Logo FB"></a>
                 </li>
                 <li class="contact-item">
                     <a href="https://wa.me/541122919313" target="_blank"><img class="footer-item"
-                            src="multimedia/image/whatsapp.png" alt="Logo WPP"></a>
+                            src="multimedia/image/wpp-blanco.png" alt="Logo WPP"></a>
                 </li>
                 <li class="contact-item">
                     <a target="_blank" href="https://www.instagram.com/mariani.muebles/"><img class="footer-item"
-                            src="multimedia/image/instagram.png" alt="Logo IG"></a>
+                            src="multimedia/image/ig-blanco.png" alt="Logo IG"></a>
                 </li>
             </ul>
         </nav>

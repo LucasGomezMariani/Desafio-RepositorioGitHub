@@ -14,10 +14,23 @@
 @import "components/botones";
 @import "components/header";
 @import "components/footer";
-@import "components/index";
 @import "components/categoriax";
 @import "components/nosotros";
 @import "components/productos";
+
+/* Carrousel */
+.img-carr{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+/* end Carrousel */
+
+/* index */
+.card-index{
+    @extend %tarjetas;
+}
+/* end index */
 
 /* presupuestos.HTML */
 .form-control{
