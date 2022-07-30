@@ -2,9 +2,13 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Merriweather", serif;
   box-sizing: border-box;
   font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: "Lato", sans-serif;
 }
 
 /* No puse mas variables por que no se me ocurrieron jajaja, trate de armar la mayoria con bootstrap */
@@ -24,19 +28,20 @@
 .boton {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  border: 1px solid #515C55;
-  background-color: #C6E1D0;
-  color: #355C43;
+  border: 2px solid #E59610;
+  background-color: none;
+  color: #E59610;
   font-size: 1.2rem;
   text-decoration: none;
 }
 .boton:active {
-  background-color: #62A87C;
-  color: #F4F4D1;
+  background-color: #f3b64f;
+  color: white;
 }
 .boton:hover {
-  background-color: #62A87C;
-  color: #F4F4D1;
+  background-color: #f3b64f;
+  color: white;
+  border: 2px solid #f3b64f;
 }
 
 .header {
@@ -151,7 +156,13 @@ footer {
 }
 
 .card-categorias {
-  border: 1px solid #829187;
+  transition: transform 0.2s;
+}
+.card-categorias:hover {
+  transform: scale(1.05);
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .banner {

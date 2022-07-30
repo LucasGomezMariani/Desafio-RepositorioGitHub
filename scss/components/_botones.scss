@@ -14,6 +14,7 @@
     &:hover{
         background-color: map-get($boton , bg-act);
         color: map-get($boton , relleno-act);
+        border:2px solid map-get($boton , bg-act);
     }
 
 }
