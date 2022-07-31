@@ -9,6 +9,18 @@
         width: 35px;
         height: auto;
     }
+    .share-links a img{
+        border-radius: $radio;
+        transition: transform .2s;
+    
+        &:hover {
+            transform: scale(1.05);
+            -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+        }
+    
+    }
 }
 
 .prod_img_secundarias_container {
@@ -35,6 +47,14 @@
 
 .prod_descripcion {
     min-height: 100%;
+    & .form-check-input:checked {
+        background-color: nth($color , 6 );
+        border-color: nth($color , 4 );
+    }
+    & .form-check-input:focus {
+        border-color: nth($color , 4 );
+    }
+
 }
 
 .prod_precio {

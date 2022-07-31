@@ -28,7 +28,7 @@
     <title>Presupuestar</title>
 </head>
 
-<body class="w-100 h-100">
+<body class="w-100">
     <!-- header -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark header">
         <div class="container-fluid">
@@ -50,7 +50,6 @@
                             </button>
                         </form>
                     </li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
@@ -84,22 +83,21 @@
                     </div>
                 </div>
             </div>
-            <form>
+            <form action="">
                 <div class="row mb-3">
                     <div class="col-8">
                         <div class="input-group mt-3 d-flex">
-                            <input type="text" class="form-control" placeholder="Nombre y Apellido."
-                                aria-label="Username">
+                            <input type="text" class="form-control" placeholder="Nombre y Apellido." aria-label="Username" required pattern="[a-zA-Z]+">
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="input-group mt-3 d-flex">
-                            <input type="tel" class="form-control" placeholder="Telefono" aria-label="phone-number">
+                            <input type="tel" class="form-control" placeholder="Telefono" aria-label="phone-number" required pattern="[1-9]+">
                         </div>
                     </div>
                 </div>
                 <div class="mb-3">
-                    <input type="email" placeholder="Email." class="form-control mb-2" aria-describedby="emailHelp">
+                    <input type="email" placeholder="Email." class="form-control mb-2" aria-describedby="emailHelp" required>
                     <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie. La informacion
                         proporsionada al sitio es confidencial.</div>
                 </div>
@@ -109,8 +107,11 @@
                     <label for="textarea-presupuestos">Detalle aqui su consulta.</label>
                 </div>
                 <div class="enviar mb-5">
-                    <a href="#"><img src="../../multimedia/image/clip.png" class="pe-3" alt="Adjuntar"></a>
-                    <input class="boton" type="button" value="Enviar">
+                    <div class="cargar-archivos">
+                        <input class="icargar" type="file" href="#">
+                        <img src="../../multimedia/image/clip.png" class="pe-3" alt="Adjuntar">
+                    </div>
+                    <input type="submit" value="Enviar" class="boton">
                 </div>
 
             </form>
@@ -126,15 +127,15 @@
             <ul class="contact-menu">
                 <li class="contact-item">
                     <a target="_blank" href="https://www.facebook.com/"><img class="footer-item"
-                            src="../../multimedia/image/facebook.png" alt="Logo FB"></a>
+                            src="../../multimedia/image/fb-blanco.png" alt="Logo FB"></a>
                 </li>
                 <li class="contact-item">
                     <a href="https://wa.me/541122919313" target="_blank"><img class="footer-item"
-                            src="../../multimedia/image/whatsapp.png" alt="Logo WPP"></a>
+                            src="../../multimedia/image/wpp-blanco.png" alt="Logo WPP"></a>
                 </li>
                 <li class="contact-item">
                     <a target="_blank" href="https://www.instagram.com/mariani.muebles/"><img class="footer-item"
-                            src="../../multimedia/image/instagram.png" alt="Logo IG"></a>
+                            src="../../multimedia/image/ig-blanco.png" alt="Logo IG"></a>
                 </li>
             </ul>
         </nav>

@@ -7,8 +7,14 @@
   font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6, a, button {
   font-family: "Lato", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* No puse mas variables por que no se me ocurrieron jajaja, trate de armar la mayoria con bootstrap */
@@ -22,32 +28,38 @@ h1, h2, h3, h4, h5, h6, a {
   word-wrap: break-word;
   background-clip: border-box;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 .boton {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  border: 2px solid #E59610;
-  background-color: none;
-  color: #E59610;
+  border: 1px solid #F35616;
+  color: #F35616;
   font-size: 1.2rem;
   text-decoration: none;
 }
 .boton:active {
-  background-color: #f3b64f;
+  background-color: #f4682e;
   color: white;
 }
 .boton:hover {
-  background-color: #f3b64f;
+  background-color: #f4682e;
   color: white;
-  border: 2px solid #f3b64f;
+  border: 1px solid #f4682e;
 }
 
 .header {
   position: sticky;
   top: 0;
   z-index: 9;
+}
+.header .btn-outline-success {
+  border-color: #f57947;
+}
+.header .btn-outline-success:hover {
+  background-color: #F35616;
+  border-color: #F35616;
 }
 
 .navbar-brand {
@@ -64,6 +76,7 @@ nav img {
 
 footer {
   width: 100%;
+  margin-top: auto;
   background-color: black;
   display: flex;
   padding: 0.5rem 0;
@@ -154,6 +167,9 @@ footer {
 .container-prod {
   border-radius: 0.5rem;
 }
+.container-prod h1 {
+  color: #f57947;
+}
 
 .card-categorias {
   transition: transform 0.2s;
@@ -188,6 +204,16 @@ footer {
   width: 35px;
   height: auto;
 }
+.prod__title .share-links a img {
+  border-radius: 0.5rem;
+  transition: transform 0.2s;
+}
+.prod__title .share-links a img:hover {
+  transform: scale(1.05);
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+}
 
 .prod_img_secundarias_container {
   display: flex;
@@ -214,6 +240,13 @@ footer {
 
 .prod_descripcion {
   min-height: 100%;
+}
+.prod_descripcion .form-check-input:checked {
+  background-color: #f57947;
+  border-color: #f4682e;
+}
+.prod_descripcion .form-check-input:focus {
+  border-color: #f4682e;
 }
 
 .prod_precio .precio_valor {
@@ -254,6 +287,21 @@ footer {
 }
 .enviar img {
   width: auto;
+  height: 2rem;
+}
+.enviar input {
+  font-family: "Lato", sans-serif;
+  background-color: #fff;
+}
+.enviar .cargar-archivos {
+  background-color: aqua;
+  position: relative;
+}
+.enviar .cargar-archivos .icargar {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 3rem;
   height: 2rem;
 }
 
