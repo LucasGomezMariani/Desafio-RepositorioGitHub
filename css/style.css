@@ -21,14 +21,16 @@ body {
 /* Colores */
 .card-index, .card-categorias {
   align-items: center;
-  position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 0;
   word-wrap: break-word;
-  background-clip: border-box;
   border: none;
   border-radius: 0.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
 }
 
 .boton {
@@ -173,12 +175,16 @@ footer {
 
 .card-categorias {
   transition: transform 0.2s;
+  cursor: pointer;
 }
 .card-categorias:hover {
   transform: scale(1.05);
   -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.card-categorias:hover h2 {
+  color: #f57947;
 }
 
 .banner {
@@ -207,6 +213,12 @@ footer {
 .prod__title .share-links a img {
   border-radius: 0.5rem;
   transition: transform 0.2s;
+}
+@media screen and (max-width: 575px) {
+  .prod__title .share-links a img {
+    width: 20px;
+    border-radius: 0.2rem;
+  }
 }
 .prod__title .share-links a img:hover {
   transform: scale(1.05);
@@ -293,16 +305,11 @@ footer {
   font-family: "Lato", sans-serif;
   background-color: #fff;
 }
-.enviar .cargar-archivos {
-  background-color: aqua;
-  position: relative;
+.enviar #presupuesto-inputFile {
+  display: none;
 }
-.enviar .cargar-archivos .icargar {
-  position: absolute;
-  top: 0;
-  opacity: 0;
-  width: 3rem;
-  height: 2rem;
+.enviar img {
+  cursor: pointer;
 }
 
 /* end presupuestos.HTML */

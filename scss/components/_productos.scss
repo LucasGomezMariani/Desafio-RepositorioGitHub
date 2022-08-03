@@ -9,9 +9,14 @@
         width: 35px;
         height: auto;
     }
+
     .share-links a img{
         border-radius: $radio;
         transition: transform .2s;
+        @media screen and (max-width: 575px) {
+            width: 20px;
+            border-radius: .2rem ;
+        }
     
         &:hover {
             transform: scale(1.05);
@@ -19,7 +24,6 @@
             -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
             box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
         }
-    
     }
 }
 

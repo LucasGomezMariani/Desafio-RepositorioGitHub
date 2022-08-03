@@ -8,11 +8,14 @@
 .card-categorias {
     @extend %tarjetas;
     transition: transform .2s;
-    
+    cursor: pointer;
     &:hover {
         transform: scale(1.05);
         -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
         -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
         box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+        h2{
+            color: nth($color , 6 );
+        }
     }
 }
