@@ -46,9 +46,13 @@ body {
   color: white;
 }
 .boton:hover {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   background-color: #f4682e;
   color: white;
   border: 1px solid #f4682e;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
 .header {
@@ -222,9 +226,9 @@ footer {
 }
 .prod__title .share-links a img:hover {
   transform: scale(1.05);
-  -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
 .prod_img_secundarias_container {
