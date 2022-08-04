@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -18,25 +18,26 @@
 
     <!-- css -->
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="/multimedia/image/icono.ico">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Merriweather:wght@300&display=swap"
+        rel="stylesheet">
 
     <title>Presupuestar</title>
 </head>
 
-<body class="w-100 h-100">
+<body class="w-100">
     <!-- header -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark header">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img class="mr-2 img" src="../../multimedia/image/isotipo-blanco.png" alt="Logo de la empresa">
+            <a class="navbar-brand" href="../../index.html">
+                <img class="mr-2 img" src="../../multimedia/image/isotipo-blanco.webp" alt="Logo de la empresa">
             </a>
             <a class="navbar-brand" href="../../index.html">MARIANI MUEBLES</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end">
@@ -45,25 +46,18 @@
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">
-                                <img class="icn__buscador" src="../../multimedia/image/svglupa.svg" alt="lupa">
+                                <img class="icn__buscador" src="../../multimedia/image/svglupa.svg" alt="lupa de busqueda">
                             </button>
                         </form>
                     </li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
                         <ul class="dropdown-menu">
-                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
-                                    class="dropdown-item">Cocina</a></li>
-                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
-                                    class="dropdown-item">Baño</a></li>
-                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
-                                    class="dropdown-item">Dormitorio</a></li>
-                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
-                                    class="dropdown-item">Oficina</a></li>
-                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
-                                    class="dropdown-item">Industrial</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html" class="dropdown-item">Cocina</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html" class="dropdown-item">Baño</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html" class="dropdown-item">Dormitorio</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html" class="dropdown-item">Oficina</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html" class="dropdown-item">Industrial</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="../../pages/info/nosotros.html" class="nav-link">Nosotros</a></li>
@@ -85,20 +79,19 @@
             </div>
             <form>
                 <div class="row mb-3">
-                    <div class="col-8">
+                    <div class="col-7">
                         <div class="input-group mt-3 d-flex">
-                            <input type="text" class="form-control" placeholder="Nombre y Apellido."
-                                aria-label="Username">
+                            <input type="text" class="form-control" placeholder="Nombre y Apellido." aria-label="Username" required pattern="[a-zA-Z]+">
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-5">
                         <div class="input-group mt-3 d-flex">
-                            <input type="tel" class="form-control" placeholder="Telefono" aria-label="phone-number">
+                            <input type="tel" class="form-control" placeholder="Telefono" aria-label="phone-number" required pattern="[1-9]+">
                         </div>
                     </div>
                 </div>
                 <div class="mb-3">
-                    <input type="email" placeholder="Email." class="form-control mb-2" aria-describedby="emailHelp">
+                    <input type="email" placeholder="Email." class="form-control mb-2" aria-describedby="emailHelp" required>
                     <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie. La informacion
                         proporsionada al sitio es confidencial.</div>
                 </div>
@@ -108,8 +101,13 @@
                     <label for="textarea-presupuestos">Detalle aqui su consulta.</label>
                 </div>
                 <div class="enviar mb-5">
-                    <a href="#"><img src="../../multimedia/image/clip.png" class="pe-3" alt="Adjuntar"></a>
-                    <input class="boton" type="button" value="Enviar">
+                    <div class="cargar-archivos">
+                        <label for="presupuesto-inputFile">
+                            <img src="../../multimedia/image/clip.png" class="pe-3" alt="Adjuntar - icono de clip">
+                        </label>
+                        <input class="icargar" type="file" href="#" id="presupuesto-inputFile">
+                    </div>
+                    <input type="submit" value="Enviar" class="boton">
                 </div>
 
             </form>
@@ -118,22 +116,19 @@
     <!-- footer -->
     <footer>
         <div class="footer-logo">
-            <img src="../../multimedia/image/isotipo-blanco.png" alt="Logo">
+            <img src="../../multimedia/image/isotipo-blanco.webp" alt="Logo de la empresa">
             <a class="footer-link" href="../../index.html">MARIANI MUEBLES</a>
         </div>
         <nav id="contact">
             <ul class="contact-menu">
                 <li class="contact-item">
-                    <a target="_blank" href="https://www.facebook.com/"><img class="footer-item"
-                            src="../../multimedia/image/facebook.png" alt="Logo FB"></a>
+                    <a target="_blank" href="https://www.facebook.com/"><img class="footer-item" src="../../multimedia/image/fb-blanco.png" alt="Logo facebook"></a>
                 </li>
                 <li class="contact-item">
-                    <a href="https://wa.me/541122919313" target="_blank"><img class="footer-item"
-                            src="../../multimedia/image/whatsapp.png" alt="Logo WPP"></a>
+                    <a href="https://wa.me/541122919313" target="_blank"><img class="footer-item" src="../../multimedia/image/wpp-blanco.png" alt="Logo whatsapp"></a>
                 </li>
                 <li class="contact-item">
-                    <a target="_blank" href="https://www.instagram.com/mariani.muebles/"><img class="footer-item"
-                            src="../../multimedia/image/instagram.png" alt="Logo IG"></a>
+                    <a target="_blank" href="https://www.instagram.com/mariani.muebles/"><img class="footer-item" src="../../multimedia/image/ig-blanco.png" alt="Logo instagram"></a>
                 </li>
             </ul>
         </nav>

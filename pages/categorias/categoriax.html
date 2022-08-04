@@ -18,11 +18,13 @@
 
     <!-- css -->
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="icon" href="/multimedia/image/icono.ico">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Merriweather:wght@300&display=swap"
+        rel="stylesheet">
 
     <title>Categoria x</title>
 </head>
@@ -32,11 +34,10 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark header">
         <div class="container-fluid">
             <a class="navbar-brand" href="../../index.html">
-                <img class="mr-2 img" src="../../multimedia/image/isotipo-blanco.png" alt="Logo Mariani Muebles">
+                <img class="mr-2 img" src="../../multimedia/image/isotipo-blanco.webp" alt="Logo de la empresa">
             </a>
             <a class="navbar-brand" href="../../index.html">MARIANI MUEBLES</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end">
@@ -45,25 +46,18 @@
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">
-                                <img class="icn__buscador" src="../../multimedia/image/svglupa.svg" alt="lupa">
+                                <img class="icn__buscador" src="../../multimedia/image/svglupa.svg" alt="lupa de busqueda">
                             </button>
                         </form>
                     </li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
                         <ul class="dropdown-menu">
-                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
-                                    class="dropdown-item">Cocina</a></li>
-                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
-                                    class="dropdown-item">Baño</a></li>
-                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
-                                    class="dropdown-item">Dormitorio</a></li>
-                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
-                                    class="dropdown-item">Oficina</a></li>
-                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html"
-                                    class="dropdown-item">Industrial</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html" class="dropdown-item">Cocina</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html" class="dropdown-item">Baño</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html" class="dropdown-item">Dormitorio</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html" class="dropdown-item">Oficina</a></li>
+                            <li class="nav-item"><a href="../../pages/categorias/categoriax.html" class="dropdown-item">Industrial</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="../../pages/info/nosotros.html" class="nav-link">Nosotros</a></li>
@@ -85,25 +79,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../../multimedia/image/cocina1.webp" class="d-block img-carr-categoria"
-                        alt="Cocina moderna">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>NUESTROS PRODUCTOS</h3>
-                    </div>
+                    <img src="../../multimedia/image/cocina1.webp" class="d-block img-carr" alt="Cocina laqueada en Blanco">
                 </div>
                 <div class="carousel-item">
-                    <img src="../../multimedia/image/cocina2.webp" class="d-block img-carr-categoria"
-                        alt="Cocina moderna">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>NUESTROS PRODUCTOS</h3>
-                    </div>
+                    <img src="../../multimedia/image/cocina2.webp" class="d-block img-carr" alt="Cocina laqueada en color petroleo y mesadas blancas">
                 </div>
                 <div class="carousel-item ">
-                    <img src="../../multimedia/image/cocina3.webp" class="d-block img-carr-categoria"
-                        alt="Cocina moderna">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>NUESTROS PRODUCTOS</h3>
-                    </div>
+                    <img src="../../multimedia/image/cocina3.webp" class="d-block img-carr" alt="Cocina laqueada brillante amarillo y gris">
                 </div>
 
             </div>
@@ -117,106 +99,79 @@
             </button>
         </section>
         <!--Seccion de productos-->
-        <section class="container mt-3 w-75 border pt-3 container-prod">
-            <h1 class="mb-3">Productos.</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+        <section class="container mt-3 w-100 border pt-3 container-prod">
+            <h1 class="mb-3">PRODUCTOS</h1>
+            <div class="row row-cols-2 row-cols-lg-3 g-4 pb-3">
                 <div class="col">
-                    <div class="text-bg-light mb-3 border-secondary">
-                        <a href="../../pages/productos/plantilla-prod.html" class="btn card-categorias">
-                            <h2 class="card-title ">Chesca</h2>
-                            <div class="card-body">
-                                <img class="card-img-top" src="../../multimedia/image/chesca2.jpeg" alt="producto">
-                                <p class="card-text mt-3 btn">Estructura de caño, asiento esterillado.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="../../pages/productos/plantilla-prod.html" class="card-categorias">
+                        <h2 class="card-title ">Cesca</h2>
+                        <div class="card-body">
+                            <img class="card-img-top" src="../../multimedia/image/chesca2.webp" alt="silla chesca natural">
+                        </div>
+                    </a>
                 </div>
                 <div class="col">
-                    <div class="text-bg-light mb-3 border-secondary">
-                        <a href="../../pages/productos/plantilla-prod.html" class="btn card-categorias">
-                            <h2 class="card-title ">Windstor</h2>
-                            <div class="card-body">
-                                <img class="card-img-top" src="../../multimedia/image/win1.jpeg" alt="producto">
-                                <p class="card-text mt-3 btn">Hermosa silla con piezas torneadas.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="../../pages/productos/plantilla-prod.html" class="card-categorias">
+                        <h2 class="card-title ">Windstor</h2>
+                        <div class="card-body">
+                            <img class="card-img-top" src="../../multimedia/image/win4.webp" alt="silla windstor color nogal">
+                        </div>
+                    </a>
                 </div>
                 <div class="col">
-                    <div class="text-bg-light mb-3 border-secondary">
-                        <a href="../../pages/productos/plantilla-prod.html" class="btn card-categorias">
-                            <h2 class="card-title ">Chesterfield</h2>
-                            <div class="card-body">
-                                <img class="card-img-top" src="../../multimedia/image/ches1.jpeg" alt="producto">
-                                <p class="card-text mt-3 btn">Tapizado tipo Chesterfield en respaldo.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="../../pages/productos/plantilla-prod.html" class="card-categorias">
+                        <h2 class="card-title">Chester</h2>
+                        <div class="card-body">
+                            <img class="card-img-top" src="../../multimedia/image/ches1.webp" alt="silla chesterfield tapizada color crudo">
+                        </div>
+                    </a>
                 </div>
                 <div class="col">
-                    <div class="text-bg-light mb-3 border-secondary">
-                        <a href="../../pages/productos/plantilla-prod.html" class="btn card-categorias">
-                            <h2 class="card-title ">Thonet.</h2>
-                            <div class="card-body">
-                                <img class="card-img-top" src="../../multimedia/image/coso4.jpeg" alt="producto">
-                                <p class="card-text mt-3 btn">Estilo thonet, madera curvada al vapor.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="../../pages/productos/plantilla-prod.html" class="card-categorias">
+                        <h2 class="card-title ">Thonet</h2>
+                        <div class="card-body">
+                            <img class="card-img-top" src="../../multimedia/image/thonet.webp" alt="silla thonet color nogal">
+                        </div>
+                    </a>
                 </div>
                 <div class="col">
-                    <div class="text-bg-light mb-3 border-secondary">
-                        <a href="../../pages/productos/plantilla-prod.html" class="btn card-categorias">
-                            <h2 class="card-title ">Reposera</h2>
-                            <div class="card-body">
-                                <img class="card-img-top" src="../../multimedia/image/reposera4.jpeg" alt="producto">
-                                <p class="card-text mt-3 btn">Reposera fabricada en madera hidro curvada.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="../../pages/productos/plantilla-prod.html" class="card-categorias">
+                        <h2 class="card-title ">Reposera</h2>
+                        <div class="card-body">
+                            <img class="card-img-top" src="../../multimedia/image/reposera4.webp" alt="reposera thonet esterila natural y estructura color nogal">
+                        </div>
+                    </a>
                 </div>
                 <div class="col">
-                    <div class="text-bg-light mb-3 border-secondary">
-                        <a href="../../pages/productos/plantilla-prod.html" class="btn card-categorias">
-                            <h2 class="card-title ">Berlin.</h2>
-                            <div class="card-body">
-                                <img class="card-img-top" src="../../multimedia/image/tapi1.jpeg" alt="producto">
-                                <p class="card-text mt-3 btn">Silla estilo europeo Berlin, respaldo tapizado.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="../../pages/productos/plantilla-prod.html" class="card-categorias">
+                        <h2 class="card-title ">Berlin</h2>
+                        <div class="card-body">
+                            <img class="card-img-top" src="../../multimedia/image/tapi1.webp" alt="silla berlin tapizada color crudo y estructura natural">
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
         <div class="GoTop text-center mt-5 mb-5">
-            <a class="boton" href="#">VOLVER ARRIBA.</a>
+            <a class="boton" href="#">VOLVER ARRIBA</a>
         </div>
     </main>
     <!-- footer -->
     <footer>
         <div class="footer-logo">
-            <img src="../../multimedia/image/isotipo-blanco.png" alt="Logo">
+            <img src="../../multimedia/image/isotipo-blanco.webp" alt="Logo de la empresa">
             <a class="footer-link" href="../../index.html">MARIANI MUEBLES</a>
         </div>
         <nav id="contact">
             <ul class="contact-menu">
                 <li class="contact-item">
-                    <a target="_blank" href="https://www.facebook.com/"><img class="footer-item"
-                            src="../../multimedia/image/facebook.png" alt="Logo FB"></a>
+                    <a target="_blank" href="https://www.facebook.com/"><img class="footer-item" src="../../multimedia/image/fb-blanco.png" alt="Logo facebook"></a>
                 </li>
                 <li class="contact-item">
-                    <a href="https://wa.me/541122919313" target="_blank"><img class="footer-item"
-                            src="../../multimedia/image/whatsapp.png" alt="Logo WPP"></a>
+                    <a href="https://wa.me/541122919313" target="_blank"><img class="footer-item" src="../../multimedia/image/wpp-blanco.png" alt="Logo whatsapp"></a>
                 </li>
                 <li class="contact-item">
-                    <a target="_blank" href="https://www.instagram.com/mariani.muebles/"><img class="footer-item"
-                            src="../../multimedia/image/instagram.png" alt="Logo IG"></a>
+                    <a target="_blank" href="https://www.instagram.com/mariani.muebles/"><img class="footer-item" src="../../multimedia/image/ig-blanco.png" alt="Logo instagram"></a>
                 </li>
             </ul>
         </nav>

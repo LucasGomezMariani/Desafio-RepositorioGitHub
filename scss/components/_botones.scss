@@ -2,7 +2,6 @@
     border-radius: map-get($boton , radio);
     padding: map-get($boton, padd);
     border: map-get($boton, border);
-    background-color: map-get($boton , bg);
     color: map-get($boton, relleno );
     font-size: map-get($boton, size );
     text-decoration: none;
@@ -12,8 +11,14 @@
         color: map-get($boton , relleno-act );
     }
     &:hover{
+        transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out;        
         background-color: map-get($boton , bg-act);
         color: map-get($boton , relleno-act);
+        border:1px solid map-get($boton , bg-act);
+        -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.4);
+
     }
 
 }
