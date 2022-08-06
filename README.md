@@ -1,14 +1,11 @@
 # CoderHouse-Proyecto_Desarrollo_Web
 Repositorio del proyecto final de desarrollo web de Coder House
 
-Corregi todos los alt de las imagenes para la accesibilidad.
+Este es mi primer proyecto como desarrollador web.
 
-Agregue el atributo title dentro de mis etiquetas <video>
+Aplique las etiquetas semanticas para tener un codigo organizado y optimizado para un mejor posiocionamiento en el SEO.
+Aprendi a maquetar y distribuir los elementos con Grid, Flexbox y Box modeling. 
+Aplique los conceptos de responsive design para que la pagina sea adaptable a distintas pantallas.
+Aplique animaciones a algunos elementos.
+Use SASS para aplicar variables, mapas, extends, mixins y listas.
 
-Agregue meta title, desc y keywords en cada HTML (Index, CategoriaX, Nosotros)
-
-Agregue img con formato webp en vez de JPG para reducir el tiempo de carga
-
-Corregi la gerarquia de titulos H1, H2 y H3, Antes los tenia casi todos en H5.
-
-Agregue etiquetas Section para mejorar la semantica de los HTML.
