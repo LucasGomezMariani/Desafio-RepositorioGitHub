@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marianimuebles.000webhostapp.com/sitemap.xml
