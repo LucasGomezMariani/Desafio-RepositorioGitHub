@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://marianimuebles.000webhostapp.com/sitemap.xml
+Sitemap: https://lucasgomezmariani.github.io/MarianiMuebles/sitemap.xml
